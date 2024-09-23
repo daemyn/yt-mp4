@@ -1,0 +1,8 @@
+version: "3"
+services:
+  yt-dlp:
+    build: .
+    container_name: yt-dlp
+    volumes:
+      - ~/Downloads:/downloads # Local directory mounted to the container
+    entrypoint: ["yt-dlp"]
